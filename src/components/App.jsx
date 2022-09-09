@@ -1,5 +1,5 @@
-import userEvent from "@testing-library/user-event";
-import Profile from './functionUserpfofile';
+
+import Profile from './Profile';
 import user from './user.json';
 export const App = () => {
   return (
