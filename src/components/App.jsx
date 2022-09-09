@@ -1,3 +1,6 @@
+import userEvent from "@testing-library/user-event";
+import user from './user.json'
+
 export const App = () => {
   return (
     <div
@@ -10,7 +13,8 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
-    </div>
-  );
-};
+
+
+     </div>
+   );
+ };
