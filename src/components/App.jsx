@@ -7,6 +7,7 @@ import Friends from './friends/Friends';
 import friends from './friends/friends.json';
 import items from './transactions/transactions.json'
 import TransactionHistory from './transactions/Transactions';
+// import styled from 'styled-components';
 
 export const App = () => {
   return (
@@ -20,7 +21,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-<Profile
+<Profile 
   username={user.username}
   tag={user.tag}
   location={user.location}
@@ -37,7 +38,7 @@ export const App = () => {
         friends={friends}
       />
       <TransactionHistory
-        items={items} />;
+        items={items} />
      </div>
    );
  };
