@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
+import {Section} from "./StylesStatistic"
 export default function Statistics({ label, statistics }) {
     return(
-    <section className = "statistics">
+    <Section>
   <h2 className="title">Upload stats</h2>
 
             <ul className="stat-list">
@@ -12,7 +13,7 @@ export default function Statistics({ label, statistics }) {
     </li>}) }
     
   </ul>
-    </section>)
+    </Section>)
 }
 Statistics.propTypes = {
   elem: PropTypes.exact({
