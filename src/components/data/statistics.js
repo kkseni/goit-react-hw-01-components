@@ -1,24 +1,26 @@
 import PropTypes from "prop-types";
-import {Section} from "./StylesStatistic"
+import {Section,Title,List,Item} from "./StylesStatistic"
 export default function Statistics({ label, statistics }) {
     return(
     <Section>
-  <h2 className="title">Upload stats</h2>
+  <Title>Upload stats</Title>
 
-            <ul className="stat-list">
+            <List>
                 {statistics.map((elem) => {
-                    return <li className="item" key={elem.id}>
+                    return <Item key={elem.id}>
     <span className="label">{elem.label} </span>
-      <span className="percentage">{elem.percentage}</span>
-    </li>}) }
-    
-  </ul>
+              
+    <span className="percentage">{elem.percentage}</span>
+    </Item>}) }
+   
+  </List>
     </Section>)
 }
 Statistics.propTypes = {
   elem: PropTypes.exact({
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
-    percentage: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
   }) 
 };
+

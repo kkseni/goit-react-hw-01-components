@@ -22,15 +22,24 @@ margin-left:15px;
 
 export const Name = styled.p`
 margin-left:100px;
+font-weight:500;
 color:black;
+text-aling:center;
 `
+
 export const Tag = styled.p`
 margin-left:50px;
-color:grey;
+color:#03045e;
+font-weight:500;
 `
+
 export const Location = styled.p`
 margin-left:20px;
-color:grey;`
+font-weight:500;
+color:grey;
+text-aling: center;
+`
+
 export const Stats = styled.ul`
 list-style:none;
 padding:0;

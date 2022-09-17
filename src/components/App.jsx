@@ -23,6 +23,7 @@ export const App = () => {
       <Statistics
         title="Upload stats"
         statistics={data}
+        percentage={data.percentage}
       />
       
       <Friends
